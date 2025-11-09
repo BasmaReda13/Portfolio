@@ -1,0 +1,341 @@
+
+*{
+    font-family: 'Poppins',sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing : border-box;
+    scroll-behavior: smooth;
+}
+header{
+  
+    background-color: rgba(17, 17, 17, 0.8); /* #111 مع شفافية خفيفة */
+    backdrop-filter: blur(4px);
+    width: 100%;
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 10%; /* بدل 30px خليه نسبة علشان يكون Responsive */
+    box-sizing: border-box;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ظل بسيط */
+   
+}
+.logo{
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none ;
+    color:#fff;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-size: 1.8em;
+    letter-spacing: 3px;
+    opacity: 0;
+    transform: translateY(-20px);
+    animation: fadeSlideIn 1s ease-out forwards, pulse 2s ease-in-out 2s 1;
+}
+
+
+@keyframes fadeSlideIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+
+.Navigation a {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.1em;
+    padding: 8px 15px;
+    letter-spacing: 1px;
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+/* خط تحتي ناعم عند hover */
+.Navigation a::after {
+    content: "";
+    position: absolute;
+    left: 15px;
+    bottom: 0;
+    width: 0%;
+    height: 2px;
+    background-color: #ffaa00;
+    transition: width 0.3s ease;
+}
+
+/* عند hover يكبر الخط التحتي */
+.Navigation a:hover::after {
+    width: 60%;
+}
+
+/* تغيّر لون النص عند hover */
+.Navigation a:hover {
+    color: #ffaa00;
+}
+
+
+
+section{
+    padding: 100px 200px;
+}
+.main{
+    width: 100%;
+    min-height: 100vh;  /*بياخد مساحة الشاشة*/
+    display: flex;
+    align-items :center;  /* دي بتوسطن الكلام من حيث طول الصفحة وتتعمل بعد display flex*/
+    background : url(images/background2.jpg) no-repeat;
+    background-size : cover;
+    background-position : center center;
+    background-attachment: fixed;
+    padding: 100px 100px 50px 100px; /* فوق، يمين، تحت، شمال */
+    
+}
+.main h2{
+    font-weight: 400;
+    color: #ccc;
+    letter-spacing: 0.5px;
+    margin-bottom: 10px;
+}
+.main h2 span{
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 700;
+    font-size: 3em;
+    line-height: 1.2;
+    letter-spacing: normal;
+    /*letter-spacing: 0.05em; /* تباعد الحروف قليل */
+    /*line-height: 1.2; /* ارتفاع السطر عشان ما يبقاش كبير */
+    display: inline-block;
+    margin-top: 10px;
+    color: #fff;
+    
+}
+
+.main h3{
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: 500;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    
+}
+.main-btn{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1em;
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.9375em;
+    margin-bottom: 40px;
+    letter-spacing: 1px;
+    border-radius: 15px;
+    border-color: #ff6000;
+    border-style: solid;
+    border-width: 2px;
+    transition: 0.7s ease;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+}
+.main-btn:hover{
+    background-color: #ff6000;
+    transform: scale(1.1);
+}
+#about-btn{
+    border-color: #14abbd;
+    margin-left: 10px;
+}
+#about-btn:hover{
+    background-color: #14abbd;
+    transform: scale(1.1);
+}
+.social-icons a{
+    color: #fff;
+    font-size: 1.7em;
+    padding-right: 30px;
+    target: blank;
+}
+.title{
+    display: flex;
+    justify-content: center;
+    letter-spacing: 1px;
+    font-size: 2.2em;
+    font-weight: 800;
+    margin-bottom: 30px;
+}
+.content{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.card{
+    background-color: #fff;
+    width: 21.25em;
+    box-shadow: 0 5px 25px rgba(1 1 1 /15%);/* الشادو من غوق وتحت صفر وبعد كده قيمة الشادو ناحية اليمين بمقدار 5px  والمساحة الانتشار للشادو 25 ولون الشادو بالشفافية 15*/
+    border-radius: 10px;
+    padding: 50px;/* لما بدي قيمة واحدة بيعتبرها انها من كل الجوانب*/   /* هي المسافة جوه العنصر نفسه وحوافيه */
+    margin: 15px;/* كذلك زي ال padding  في القيمة ولكن المارجين هي المسافة الخارجية بين العناصر وبعضها*/
+    transition: 0.7s ease; /* بتخلي حركة الترانسفورم للبوكس براحة مش سريعة */
+}
+.card:hover{
+    transform: scale(1.1);
+}
+.icon{
+    text-align: center;
+    color: #14abbd;
+    font-size: 8em;
+}
+.info{
+    text-align: center;
+}
+.info h3{
+    color: #ffaa00;
+    font-size: 1.2em;
+    font-weight: 700;
+    margin: 10px;
+    
+}
+.projects{
+    background-color: #000;
+}
+.projects .content{
+    margin: 30px;
+}
+.project_card{
+    background-color: #fff;
+    border: 1px solid #fff;
+    min-height: 14em; /* بقوله اقل ارتفاع 14 وممكن يكتر لكن لو اكتبت ارتفاع بس كده انا حصرته في مقاس معين */
+    width: 23em;
+    overflow: hidden;
+    border-radius: 10px;
+    margin: 20px;
+    transition: 0.7s ease;
+}
+.project_card:hover{
+    transform: scale(1.1);
+
+}
+
+.project_card:hover .project_image{
+   opacity: 0.95;
+
+}
+.project_image img{
+    width: 100%; /* الصورة تاخد المقاس بنسبة عرض %100*/
+}
+.project_info{
+    padding: 1em;
+}
+.project_category{
+    font-size: 0.8em;
+    color: #000;
+}
+.project_title{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1em;
+    font-weight: 800;
+    margin-top: 10px;
+}
+.project_title span{
+    font-size: 1.2em;
+    letter-spacing: 1px;
+}
+.more-details{
+    text-decoration: none;
+    color: #14abbd;
+}
+.more-details:hover{
+    color: #ff6000;
+    text-decoration: underline;
+}
+.card-contact .icon{
+    font-size: 4.5em;
+
+}
+.card-contact .info h3{
+    font-size: 1.3em;
+    letter-spacing: 1px;
+}
+.card-contact .info p{
+    font-size: 1.1em;
+}
+.footer{
+    background-color: #000;
+    color: #fff;
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+
+}
+.footer .social-icons{
+    padding: 0 0 0 8px;
+    /* top right bottom left زي ماشية كانها زي الساعة */
+    
+}
+.footer-title{
+    font-size: 1.3em;
+    font-weight: 600;
+}
+.footer-title span{
+    color: #ff6000;
+}
+.arrow{
+    color: white;
+}
+/* media query  لعمل responsive design*/
+@media(max-width:1023px){
+    header{
+        padding: 12px 20px;
+    }
+    .Navigation a{
+        padding-left: 10px;
+    }
+    .title{
+        font-size: 1;
+    }
+    section{
+        padding: 80px 20px;
+    }
+    .main_content h2{
+        font-size: 1em;
+    }
+    .main_content h3{
+        font-size: 1.6em;
+    }
+    .content{
+        flex-direction: column;
+        align-items: center;/* بتخليه في النص بحيث عموديا */
+        /*لكن justify-content  بتخليه في نص ك صف*/
+    }
+}
+@media(max-width:641px){
+    body{
+        font-size: 12px; /* هنا هيبقي ال 1em=12px*/
+    }
+    .main_content h2{
+        font-size: 0.8em;
+    }
+    .main_content h3{
+        font-size: 1.4em;
+    }
+}
+
+
+@media(max-width:300px){   /* الشاشات اللي مقاسها اقل من 300px*/
+    body{
+        font-size: 10px; /* 1em = 10px*/
+    }
+}
