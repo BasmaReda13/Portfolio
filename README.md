@@ -31,9 +31,9 @@ Direct email and phone contact details for clients and collaborators
 
 
 ## 📬 Connect With Me
-[![LinkedIn](https://www.linkedin.com/in/basma-reda-5b8a162b5/)  
-[![Behance](https://www.behance.net/basmareda5#)  
-[![Email](basma.reda.132@gmail.com)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)]([https://www.linkedin.com/in/basma-reda-5b8a162b5/](https://www.linkedin.com/in/basma-reda-5b8a162b5/))  
+[![Behance](https://img.shields.io/badge/Behance-1769FF?style=flat-square&logo=behance&logoColor=white)]([https://www.behance.net/](https://www.behance.net/basmareda5#))  
+[![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:basma.reda.132@gmail.com)
 
 
 
