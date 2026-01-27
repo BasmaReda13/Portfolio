@@ -1,4 +1,4 @@
-# 🌟 Portfolio | Basma Reda for Graphic Designer
+# 🌟 Portfolio | for Graphic Designer
 
 ![Portfolio Home](./assets/home-screenshot.png) 
 
