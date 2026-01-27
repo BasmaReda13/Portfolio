@@ -1,8 +1,4 @@
-# 🌟 Portfolio
-for Graphic Design Portfolio
-## 🔗 Live Demo
-Check out my portfolio online:
-https://basmareda13.github.io/Portfolio/
+# 🌟 Portfolio | Basma Reda for Graphic Designer
 
 ![Portfolio Home](./assets/home-screenshot.png) 
 
@@ -11,10 +7,18 @@ I’m a **Responsive Web Designer & Frontend Developer** passionate about creati
 I specialize in **HTML, CSS, Responsive Design**, and visual storytelling.
 
 
+## 🔗 Live Demo
+Check out my portfolio online:
+
+[🌐 View Live Portfolio](https://basmareda13.github.io/Portfolio/)
+
+
+
 ## 🛠 Built With
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat-square&logo=html5&logoColor=white) 
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat-square&logo=css3&logoColor=white) 
 ![Responsive](https://img.shields.io/badge/Responsive-Yes-green?style=flat-square)
+
 
 
 ## 💼 What You’ll See
@@ -31,8 +35,8 @@ Direct email and phone contact details for clients and collaborators
 
 
 ## 📬 Connect With Me
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)]([https://www.linkedin.com/in/basma-reda-5b8a162b5/](https://www.linkedin.com/in/basma-reda-5b8a162b5/))  
-[![Behance](https://img.shields.io/badge/Behance-1769FF?style=flat-square&logo=behance&logoColor=white)]([https://www.behance.net/](https://www.behance.net/basmareda5#))  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=flat-square&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/basma-reda-5b8a162b5/)  
+[![Behance](https://img.shields.io/badge/Behance-1769FF?style=flat-square&logo=behance&logoColor=white)](https://www.behance.net/basmareda5)  
 [![Email](https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white)](mailto:basma.reda.132@gmail.com)
 
 
