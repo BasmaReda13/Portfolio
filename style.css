@@ -158,7 +158,7 @@ section {
   color: #fff;
   font-size: 1.7em;
   padding-right: 30px;
-  target: blank;
+  /* target: blank; */
 }
 .title {
   display: flex;
@@ -283,7 +283,7 @@ section {
 .footer-title span {
   color: #ff6000;
 }
-.arrow {
+.arrow:hover {
   color: white;
 }
 /* media query  لعمل responsive design*/
