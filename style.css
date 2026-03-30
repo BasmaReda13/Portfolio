@@ -6,7 +6,7 @@
   scroll-behavior: smooth;
 }
 header {
-  background-color: rgba(17, 17, 17, 0.8); /* #111 مع شفافية خفيفة */
+  background-color: rgba(17, 17, 17, 0.8);
   backdrop-filter: blur(4px);
   width: 100%;
   position: fixed;
@@ -14,9 +14,9 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 10%; /* بدل 30px خليه نسبة علشان يكون Responsive */
+  padding: 15px 10%;
   box-sizing: border-box;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* ظل بسيط */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 .logo {
   font-family: "Times New Roman", Times, serif;
@@ -63,7 +63,6 @@ header {
   transition: color 0.3s ease;
 }
 
-/* خط تحتي ناعم عند hover */
 .Navigation a::after {
   content: "";
   position: absolute;
@@ -75,12 +74,10 @@ header {
   transition: width 0.3s ease;
 }
 
-/* عند hover يكبر الخط التحتي */
 .Navigation a:hover::after {
   width: 60%;
 }
 
-/* تغيّر لون النص عند hover */
 .Navigation a:hover {
   color: #ffaa00;
 }
@@ -90,14 +87,14 @@ section {
 }
 .main {
   width: 100%;
-  min-height: 100vh; /*بياخد مساحة الشاشة*/
+  min-height: 100vh;
   display: flex;
-  align-items: center; /* دي بتوسطن الكلام من حيث طول الصفحة وتتعمل بعد display flex*/
+  align-items: center;
   background: url(images/background2.jpg) no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  padding: 100px 100px 50px 100px; /* فوق، يمين، تحت، شمال */
+  padding: 100px 100px 50px 100px;
 }
 .main h2 {
   font-weight: 400;
@@ -111,8 +108,7 @@ section {
   font-size: 3em;
   line-height: 1.2;
   letter-spacing: normal;
-  /*letter-spacing: 0.05em; /* تباعد الحروف قليل */
-  /*line-height: 1.2; /* ارتفاع السطر عشان ما يبقاش كبير */
+
   display: inline-block;
   margin-top: 10px;
   color: #fff;
@@ -180,11 +176,11 @@ section {
 .card {
   background-color: #fff;
   width: 21.25em;
-  box-shadow: 0 5px 25px rgba(1 1 1 /15%); /* الشادو من غوق وتحت صفر وبعد كده قيمة الشادو ناحية اليمين بمقدار 5px  والمساحة الانتشار للشادو 25 ولون الشادو بالشفافية 15*/
+  box-shadow: 0 5px 25px rgba(1 1 1 /15%);
   border-radius: 10px;
-  padding: 50px; /* لما بدي قيمة واحدة بيعتبرها انها من كل الجوانب*/ /* هي المسافة جوه العنصر نفسه وحوافيه */
-  margin: 15px; /* كذلك زي ال padding  في القيمة ولكن المارجين هي المسافة الخارجية بين العناصر وبعضها*/
-  transition: 0.7s ease; /* بتخلي حركة الترانسفورم للبوكس براحة مش سريعة */
+  padding: 50px;
+  margin: 15px;
+  transition: 0.7s ease;
 }
 .card:hover {
   transform: scale(1.1);
@@ -212,7 +208,7 @@ section {
 .project_card {
   background-color: #fff;
   border: 1px solid #fff;
-  min-height: 14em; /* بقوله اقل ارتفاع 14 وممكن يكتر لكن لو اكتبت ارتفاع بس كده انا حصرته في مقاس معين */
+  min-height: 14em;
   width: 23em;
   overflow: hidden;
   border-radius: 10px;
@@ -227,7 +223,7 @@ section {
   opacity: 0.95;
 }
 .project_image img {
-  width: 100%; /* الصورة تاخد المقاس بنسبة عرض %100*/
+  width: 100%;
 }
 .project_info {
   padding: 1em;
@@ -274,7 +270,7 @@ section {
 }
 .footer .social-icons {
   padding: 0 0 0 8px;
-  /* top right bottom left زي ماشية كانها زي الساعة */
+  /* top right bottom left */
 }
 .footer-title {
   font-size: 1.3em;
@@ -286,7 +282,7 @@ section {
 .arrow:hover {
   color: white;
 }
-/* media query  لعمل responsive design*/
+/* media query for a responsive design*/
 @media (max-width: 1023px) {
   header {
     padding: 12px 20px;
@@ -308,13 +304,12 @@ section {
   }
   .content {
     flex-direction: column;
-    align-items: center; /* بتخليه في النص بحيث عموديا */
-    /*لكن justify-content  بتخليه في نص ك صف*/
+    align-items: center;
   }
 }
 @media (max-width: 641px) {
   body {
-    font-size: 12px; /* هنا هيبقي ال 1em=12px*/
+    font-size: 12px;
   }
   .main_content h2 {
     font-size: 0.8em;
