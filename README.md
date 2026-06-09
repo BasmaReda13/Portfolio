@@ -1,6 +1,6 @@
 # 🌟 Portfolio | for Graphic Designer
 
-![Portfolio Home](./assets/home-portfolio2.png)
+![Portfolio Home](./assets/background my web.png)
 
 ## 👋 Hello! I’m Basma
 
