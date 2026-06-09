@@ -1,4 +1,4 @@
-# 🌟 Portfolio | for Graphic Designer
+# 🌟 Portfolio
 
 ![Portfolio Home](./assets/background my web.png)
 
@@ -23,7 +23,7 @@ Check out my portfolio online:
 
 ### 🎨 Services
 
-- Frontend Development
+- Web Development
 - UX / UI Design
 - Graphic Design (Social Media, Print, Branding)
 
